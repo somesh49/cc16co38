@@ -1,23 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-	char a[10];
-	int b,n;
-	cout<<"Enter a size of string"<<endl;
-	cin>>n;
+	string s;
+	int n;
 	cout<<"Enter string"<<endl;
-	//comment
+	cin>>s;
+	n=s.length();
 	for(int i=0;i<=n-1;i++)
 	{
-	cin>>a[i];
-    }
-	for(int i=0;i<=n-1;i++)
-	{
-		b=a[i];
-		if(b==a[i])
-		cout<<a[i]<<" is Integer"<<endl;
+		if (isdigit(s[i]) == true)
+		cout<<s[i]<<" is Integer"<<endl;
 		else
-		cout<<a[i]<<" is Character"<<endl;
+		cout<<s[i]<<" is Character"<<endl;
 	
 	}
 }
