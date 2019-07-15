@@ -6,6 +6,7 @@ int main(){
 	cout<<"Enter a size of string"<<endl;
 	cin>>n;
 	cout<<"Enter string"<<endl;
+	//comment
 	for(int i=0;i<=n-1;i++)
 	{
 	cin>>a[i];
